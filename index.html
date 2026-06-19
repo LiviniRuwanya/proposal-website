@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Handsome ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-gradient"></div>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+  <div class="sparkle-layer" id="sparkleLayer" aria-hidden="true"></div>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Play background music">
+    ♫ Our Song
+  </button>
+  <div class="music-hint" id="musicHint" aria-hidden="true">
+    Tap <strong>“Our Song”</strong> to play our music first 🎧❤️
+  </div>
+
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="music/I-Choose-You.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main class="app">
+    <section class="screen active" id="welcomeScreen">
+      <div class="glass-card hero-card entrance-pop">
+        <img class="hero-img" src="images\image2edited.gif" alt="A cute animated greeting" />
+        <p class="eyebrow">A tiny surprise for you</p>
+        <h1>Hi Handsome ❤️</h1>
+        <p class="hero-text">I made something special just for you...</p>
+        <button class="primary-btn" id="beginBtn" type="button">Let's Begin ❤️</button>
+      </div>
+    </section>
+
+    <section class="screen" id="questionScreen">
+      <div class="glass-card question-card">
+        <div class="progress-wrap">
+          <span id="questionCounter">Question 1 of 8</span>
+          <div class="progress-bar" aria-hidden="true">
+            <div class="progress-fill" id="questionProgress"></div>
+          </div>
+        </div>
+        <h2 id="questionText">Do you love me? ❤️</h2>
+        <div class="answer-grid" id="answerGrid"></div>
+        <p class="answer-message" id="answerMessage" aria-live="polite"></p>
+          </div>
+    </section>
+
+    <section class="screen" id="loveMeterScreen">
+      <div class="glass-card love-meter-card">
+        <p class="eyebrow">Calculating romance</p>
+        <h2>Love Level</h2>
+        <div class="meter">
+          <div class="meter-fill" id="meterFill"></div>
+          <span class="meter-label" id="meterLabel">0%</span>
+        </div>
+        <h3>Perfect Match ❤️</h3>
+      </div>
+    </section>
+
+    <section class="screen" id="galleryScreen">
+      <div class="glass-card gallery-card">
+        <p class="eyebrow">Our memories</p>
+        <h2>Little Pieces Of Us</h2>
+        <div class="carousel">
+          <button class="carousel-btn prev" id="prevPhoto" type="button" aria-label="Previous photo">‹</button>
+          <figure class="photo-frame">
+            <img id="galleryImage" src="images\1.jpeg" alt="Romantic memory 1" />
+            <figcaption id="galleryCaption">This is where our story began ❤️</figcaption>
+          </figure>
+          <button class="carousel-btn next" id="nextPhoto" type="button" aria-label="Next photo">›</button>
+        </div>
+        <div class="dots" id="galleryDots" aria-label="Gallery slide indicators"></div>
+        <button class="primary-btn soft" id="galleryContinue" type="button">Continue ❤️</button>
+      </div>
+    </section>
+
+    <section class="screen" id="letterScreen">
+      <div class="glass-card letter-card">
+        <p class="eyebrow">A little love letter</p>
+        <h2>From My Heart</h2>
+        <p class="typed-letter" id="typedLetter" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="screen" id="countdownScreen">
+      <div class="glass-card countdown-card">
+        <h2>I have one last question...</h2>
+        <div class="countdown-number" id="countdownNumber">3</div>
+      </div>
+    </section>
+
+    <section class="screen" id="proposalScreen">
+      <div class="glass-card proposal-card">
+        <div class="proposal-lines" id="proposalLines">
+          <img class="hero-img" src="images\image5edited.gif.gif" alt="A cute animated greeting" />
+          <p>You are my best friend.</p>
+          <p>My favorite person.</p>
+          <p>My greatest adventure.</p>
+          <p>And the love of my life.</p>
+        </div>
+        <div class="proposal-question hidden" id="proposalQuestion">
+          <div class="popup-panel">
+            <h2>WILL YOU MARRY ME? 💍</h2>
+            <div class="proposal-buttons">
+              <button type="button">YES!!! 💖</button>
+              <button type="button">ABSOLUTELY YES 💕</button>
+              <button type="button">OF COURSE ❤️</button>
+              <button type="button">I THOUGHT YOU'D NEVER ASK 😍</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="celebrationScreen">
+      <div class="fireworks" id="fireworks" aria-hidden="true"></div>
+      <div class="glass-card celebration-card">
+        <h2>You just made me the happiest person in the world ❤️</h2>
+        <p>I can't wait to spend forever with you.</p>
+        <p>I love you Pati ❤️</p>
+        <button class="primary-btn" id="replayBtn" type="button">Replay Our Journey ✨</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
