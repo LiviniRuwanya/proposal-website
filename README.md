@@ -1,8 +1,8 @@
-# Proposal Website ❤️
+# Proposal Website 
 
 A romantic, single-page interactive proposal website built with plain HTML, CSS, and JavaScript. It walks your special someone through a heartfelt journey — from a cute welcome, through a fun quiz, a love meter, a photo gallery, a typed love letter, and a countdown — all leading up to the big question and a celebration. 💍
 
-## ✨ Features
+## Features
 
 - **Welcome screen** with an animated greeting and a "Let's Begin" button
 - **Question quiz** with a progress bar and playful answers
@@ -10,18 +10,18 @@ A romantic, single-page interactive proposal website built with plain HTML, CSS,
 - **Photo gallery** carousel of shared memories with captions
 - **Typed love letter** that writes itself out on screen
 - **Countdown** building suspense to the final question
-- **The proposal** — "Will you marry me?" with only "yes" answers 😍
+- **The proposal** — "Will you marry me?" with only "yes" answers 
 - **Celebration screen** with fireworks and a replay option
 - **Background music** toggle ("Our Song")
 - Floating hearts, sparkles, and smooth animated transitions throughout
 
-## 🛠️ Built With
+## Built With
 
 - HTML5
 - CSS3 (animations, glassmorphism, Google Fonts: Pacifico & Poppins)
 - Vanilla JavaScript
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 proposal-website/
@@ -32,7 +32,7 @@ proposal-website/
 └── music/          # Background song
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 No build tools or dependencies needed — it's a static site.
 
@@ -44,7 +44,7 @@ No build tools or dependencies needed — it's a static site.
 
 > Tip: For background music to autoplay-on-tap to work reliably, serve the folder with a simple local server (e.g. the VS Code "Live Server" extension or `python -m http.server`) and tap the **♫ Our Song** button.
 
-## 💝 Customizing
+##  Customizing
 
 - Replace the photos in `images/` and update the captions in `index.html` / `script.js`.
 - Swap the song in `music/` and update the `<source>` path in `index.html`.
@@ -52,4 +52,3 @@ No build tools or dependencies needed — it's a static site.
 
 ---
 
-Made with love. ❤️
